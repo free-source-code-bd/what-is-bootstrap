@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap</title>
+
+	<style>
+
+		.slider{
+			width: 750px;
+			height: auto;
+			box-shadow:  0px 0px 4px 1px #cccccc;
+			padding: 15px;
+			box-sizing: border-box;
+			text-align: justify;
+			display: none;
+			position: relative;
+		}
+		.slider .page-number{
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+			padding: 5px;
+			font-size: 20px;
+		}
+		#slider-1{
+			display: block;
+		}
+		.slider h2{
+			font-size: 30px;
+			margin: 0px;
+		}
+		.pagination{
+			margin-top: 10px;
+		}
+		.pagination button{
+			padding: 5px 10px;
+			cursor: pointer;
+			font-size: 17px;
+			font-weight: bold;
+		}
+
+		.slider ol li{
+			font-size: 30px;
+			margin-bottom: 4px;
+		}
+
+		.slider ul li, .slider ol li{
+			font-size: 25px;
+			margin:10px 0px;
+		}
+		.font-20 li{
+			font-size: 20px !important;
+		}
+        #button-1{
+            color: red;
+        }
+
+	</style>
+</head>
+<body>
+	
+
+
+         <center>
+         	
+         	<h1>Bootstrap</h1>
+
+
+         	<div class="slider" id="slider-1">
+         		<center><h2>Index</h2></center>
+         		<ol>
+
+         			<li>What is Bootstrap? --- 2</li>
+
+                    <li>Live Example --- 3</li>
+
+         			<li>Dependency  --- 4</li>
+
+         			<li>How to Learn --- 5</li>
+
+         			<li>How Many?--- 6</li>
+                    <li>Job / Freelancing Demand --- 7</li>
+
+         		</ol>
+
+         		<span class="page-number">1</span>
+         	</div>
+
+             
+             <div class="slider" id="slider-2">
+             	<center><h2>Bootstrap</h2></center>
+                <p>
+                    CSS Framework for developing <b>responsive</b> and mobile-first websites
+                </p>
+
+             	<ul>
+             		<li>Responsive Design</li>
+
+             		<li>Quick Design</li>
+
+             		<li>Easy to Control</li>
+
+             	</ul>
+             	<span class="page-number">2</span>
+             </div>
+
+
+             <div class="slider" id="slider-3">
+             	<center><h2>Example</h2></center>
+                
+                <ul>
+                    <li>
+                        Our Bootstrap
+                    </li>
+                    <li>
+                        Real Bootstrap
+                    </li>
+                </ul>
+
+             	<span class="page-number">3</span>
+             </div>
+
+
+
+             <div class="slider" id="slider-4">
+                <center><h2>Dependency</h2></center>
+                
+                <ul>
+                    <li>
+                        CSS - CSS flex
+                    </li>
+                    <li>
+                        Basic JS / Jquery for Bootstrap 4
+                    </li>
+                </ul>
+
+                <span class="page-number">4</span>
+             </div>
+
+
+
+
+
+            <div class="slider" id="slider-5">
+                <center><h2>How to Start?</h2></center>
+                
+                <ol>
+                    <li>
+                        YouTube
+                        <ol>
+                            <li>Bangla Informative</li>
+                            <li>Bangla Tutoraial (Basic)</li>
+                        </ol>
+                    </li>
+                    <li>
+                         Website
+                         <ol>
+                             <li>Website: www.getbootstrap.com</li>
+                         </ol>
+                    </li>
+                </ol>
+
+                <p>
+                    <b>Note: </b> Project
+                </p>
+
+                <span class="page-number">5</span>
+             </div>
+
+
+
+             <div class="slider" id="slider-6">
+                <center><h2>How Many</h2></center>
+             
+                <ul>
+                    <li>
+                        Layouts
+                    </li>
+                    <li>
+                        Content
+                        <ol>
+                            <li>Typography</li>
+                            <li>Image</li>
+                            <li>Table</li>
+                            <li>Figures</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Forms
+                    </li>
+                    <li>
+                        Components
+                    </li>
+                    <li>
+                        Utilities
+                        <ol>
+                            <li>Everything Without <b>API</b> & Interactions</li>
+                        </ol>
+                    </li>
+
+                </ul>
+                <p>
+                    <b>Note: </b> Job for <b>Front-End Developer</b> is 100%
+                </p>
+                <span class="page-number">6</span>
+             </div>
+
+
+             <div class="slider" id="slider-7">
+             	<center><h2>Job / Freelancing Demand</h2></center>
+            
+             	<ul>
+             		<li>
+             			Job (40% / 50%)
+             		</li>
+
+             		<li>
+             			Freelancing (100%)
+                        <ol>
+                            <li>Small Project</li>
+                            <li>PSD to HTML</li>
+                            <li>Email Signature</li>
+                            <li>Email Template</li>
+                        </ol>
+             		</li>
+             	</ul>
+                <p>
+                    <b>Note: </b> Job for <b>Front-End Developer</b> is 100%
+                </p>
+             	<span class="page-number">7</span>
+             </div>
+
+
+
+
+
+
+             <div class="pagination">
+             	<button class="button" id="button-1" onclick="show_slide(1)">1</button>
+             	<button class="button" id="button-2" onclick="show_slide(2)">2</button>
+             	<button class="button" id="button-3" onclick="show_slide(3)">3</button>
+             	<button class="button" id="button-4" onclick="show_slide(4)">4</button>
+                <button class="button" id="button-5" onclick="show_slide(5)">5</button>
+                <button class="button" id="button-6" onclick="show_slide(6)">6</button>
+                <button class="button" id="button-7" onclick="show_slide(7)">7</button>
+             </div>
+
+         </center>
+
+
+
+
+         <script>
+         	let all_slider = document.getElementsByClassName('slider');
+         	let all_button = document.getElementsByClassName('button');
+
+         	function show_slide(slider_number){
+         		hide_all_slider();
+         		show_this_slider(slider_number);
+         		let button_number = slider_number;
+
+
+         		deactivate_all_button()
+         		active_this_button(button_number)
+
+         	}
+
+
+
+         	function hide_all_slider(){
+
+         		for(let i=0; i<all_slider.length;i++){
+
+         			all_slider[i].style.display = "none";
+         		}
+         	}
+
+
+         	function show_this_slider(slider_number){
+         		let this_slider = document.getElementById("slider-"+slider_number);
+         		this_slider.style.display = "block";
+         		
+         	}         	
+
+
+		   
+		   function deactivate_all_button(){
+
+		   	for(let i=0; i<all_button.length;i++){
+
+		   		all_button[i].style.color = "black";
+		   	}
+		   }
+
+         	function active_this_button(button_number){
+         		let this_button = document.getElementById("button-"+button_number);
+         		this_button.style.color = "red";
+         	}
+
+
+
+         </script>
+</body>
+</html>
